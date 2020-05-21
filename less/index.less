@@ -53,7 +53,57 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
+	html, body {
+		height: 100%;
+		text-align: center;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+	//Variables//
+	@h1-color: black;
+	@font-weight: 300;
+	@desktop: ~"only screen and(max-width: 800px";
+	@border: 2px solid @h1-color;
+	@padding: 15px;
+	@fontSize: 24px;
 
+
+	.flex{
+		display: flex;
+		justify-content: space-between;
+	}
+	h1, h3, h2{
+		color: @h1-color;
+		font-weight: bolder;
+		padding-top: @padding;
+		font-size: @fonSize+10;
+	}
+
+	#header {
+		color: black;
+	}
+	a {
+		color: blue;
+		&:hover {
+		color: rgb(187, 187, 187);
+		padding: @padding;
+	}
+}
+footer{
+	border: @border;
+	text-align: center;
+	padding: @padding;
+}
+.container{
+	padding: @padding @padding+20;
+	font-size: 18px;
+		p{
+			padding: @padding;
+			font-size: 18px;
+		}
+}
+#top-image{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
