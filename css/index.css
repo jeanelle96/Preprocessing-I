@@ -136,6 +136,31 @@ body {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  padding: 20px;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Nosifer';
+  font-size: 22px;
+  color: rgba(39, 68, 236, 0.342);
+  text-align: center;
+  text-shadow: 2px 2px 5px #f5f25c;
+  padding: 14px 16px;
+}
+h1.p,
+h2.p,
+h3.p {
+  float: left;
+  color: black;
+  font-size: 15px;
+}
+.main-info,
+.contact-info,
+.content,
+.bottom-info {
+  background-color: white;
+  padding: 20px;
 }
 img {
   display: block;
