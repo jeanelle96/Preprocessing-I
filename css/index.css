@@ -185,7 +185,20 @@ img {
   background-color: #ddd;
   color: black;
 }
-.footer {
+.topnav .footer {
   background-color: #f1f1f1;
   padding: 10px;
+}
+.topnav .little-footer {
+  background-color: lightgreen;
+  padding: 10px;
+}
+@media (min-width: 500px) {
+  .main-info,
+  .contact-info,
+  .content,
+  .bottom-info {
+    width: 100%;
+    background-color: lightskyblue;
+  }
 }

@@ -47,11 +47,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+//*Variable*//
+
+
 
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
+//*Variables*//
+@bcolor: lightblue;
+@fontSize: 22px;
+@mobile: ~"only screen and (min-width: 500px)";
+@pFontSize: 15px;
+
 
 	html, body {
 		height: 100%;
@@ -61,7 +70,7 @@ table {
 		padding: 20px;
 	}
 	h1, h2, h3{
-			font-family: 'Nosifer';font-size: 22px;
+			font-family: 'Nosifer';font-size: @fontSize;
 			color:  rgba(39, 68, 236, 0.342);
 			text-align: center;
 			text-shadow: 2px 2px 5px rgb(245, 242, 92);
@@ -69,13 +78,12 @@ table {
 			&.p{ 
 				float: left;
 				color: black;
-				font-size: 15px;
+				font-size: @pFontSize;
 			}
 		}
 			.main-info, .contact-info, .content, .bottom-info {
 				background-color: white;
 				padding: 20px;
-				
 			}
 	img{
 		display: block;
@@ -99,8 +107,18 @@ table {
 				color: black;
 			} 
 	}
-	} 
 	.footer {
 		background-color: #f1f1f1;
 		padding: 10px;
 	}
+	.little-footer{
+		background-color: lightgreen;
+		padding: 10px;
+	}
+}
+@media (min-width:500px){
+	.main-info, .contact-info, .content, .bottom-info{
+		width: 100%;
+		background-color: lightskyblue;
+	}
+}
